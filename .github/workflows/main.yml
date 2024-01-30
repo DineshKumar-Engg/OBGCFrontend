@@ -35,7 +35,7 @@ jobs:
         host: ${{ secrets.LIGHTSAIL_IP }}
         username: bitnami
         key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
-        source: "dist"  # Change this to the directory where your build artifacts are located
+        source: "OBGCFrontend"  # Change this to the directory where your build artifacts are located
         target: "/home/bitnami/OBGCFrontend"  # Change this to the destination directory on your Lightsail instance
 
     - name: SSH into Lightsail instance
